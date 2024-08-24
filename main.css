@@ -1,0 +1,17 @@
+#box
+{
+width:30%;
+background:#f0f5f5;
+margin:auto;
+padding:40px;
+margin-top:40px;
+
+box-shadow:10px 10px 10px gray;
+}
+
+#box input[type="text"],input[type="password"],input[type="First name"],input[type="Last name"],
+input[type="Number"],input[type="email"],input[type="date"],input[type="file"]{color:gray;height:30px;border-radius:10px;font-size:20px;}
+
+#box label{font-size:20px;}
+
+#box input[type="submit"],input[type="reset"]{width:40%;margin-left:15px;height:30px;}
