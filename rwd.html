@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<title>Rwd</title>
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+</br></br>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+nav
+
+{
+background:gray;
+display:inline-block;
+height:20px;
+padding:2px;
+}
+
+nav #menu ol li
+{
+transition:0.50s;
+margin-left:-300px;
+padding:20px;
+list-style:none;
+background:#00cccc;
+width:100px;
+margin-top:-13px;
+}
+
+nav #menu
+{
+height:20px;
+overflow:hidden;
+}
+
+nav #menu:hover
+{
+overflow:visible;
+}
+nav #menu:hover ol li
+{
+transition:0.50s;
+margin-left:-40px;
+}
+
+nav #menu ol li:hover{background:#b3ffff;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+		body{background:yellow;}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+		body{background:lightsalmon;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+		body{background:seagreen;}
+		nav{display:block;}
+		nav #menu ol li{display:inline;margin-left:40px;}
+		nav #menu{overflow:visible;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+		body{background:pink;}
+
+}
+
+
+</style>
+
+<body>
+
+<nav>
+
+	<div id="menu">Menu
+		
+				<ol>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">service</a></li>
+					<li><a href="#">product</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Photo Gallery</a></li>
+				</ol>
+	 
+	
+
+</div>
+
+</nav>
+
+
+
+</html>
