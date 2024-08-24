@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title>banner</title>
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+</head>
+
+<style>
+
+@keyframes a1
+{
+10%{opacity:1;color:lightsalmon;}
+20%{opacity:0;color:white;}
+border:12px red rigde;
+}
+
+@keyframes a2
+{
+30%{color:pink;}
+40%{color:cyan;}
+border:12px #00e6e6 dashed;
+}
+
+@keyframes a3
+{
+50%{opacity:1;margin-left:0px;color:white;}
+60%{opacity:0;margin-left:10px;color:orange;}
+}
+
+@keyframes a4
+{
+70%{opacity:1;font-size:38px;color:orange;}
+80%{opacity:0;}
+}
+
+@keyframes a5
+{
+90%{color:#e600ac;}
+100%{color:#ff99e6;}
+}
+
+body
+{
+margin-top:10px;
+margin-left:0px;
+}
+
+.box
+{
+padding:20px;
+text-align:center;
+border:12px #ff4d94 dotted;
+width:500px;
+height:450px;
+font-size:40px;
+position:absolute;
+top:10px;
+left:35%;
+box-shadow:10px 10px 10px gray;
+}
+
+#b5{animation:a1 3s ease-out infinite alternate;}
+#b4{animation:a2 4s ease-out infinite alternate;}
+#b3{animation:a3 5s ease-out infinite alternate;}
+#b2{animation:a4 6s ease-out infinite alternate;}
+#b1{animation:a5 7s ease-out infinite alternate;}
+
+</style>
+
+<body bgColor="#ffb3d1">
+
+<div style="background:#000066" class="box" id="b5" style="color:white;"><br/><br/>Myntra Sale</div>
+<div class="box" id="b4"><br/><br/><br/><br/>Best Product Quality</div>
+<div class="box" id="b3" style="color:brown"><br/><br/><br/><br/><br/><br/>Find Best on Myntra</div>
+<div class="box" id="b2"><br/><br/><br/><br/><br/><br/><br/><br/>Delhi Elections</div>
+<div class="box" id="b1" style="color:#99ffcc">Today's temperature</div>
+
+</body>
+
+</html>

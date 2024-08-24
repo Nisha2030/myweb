@@ -1,0 +1,110 @@
+<!doctype>
+
+<html>
+
+<head>
+<title>Banner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+</head>
+
+<style>
+
+@keyframes runbanner
+{
+10%{left:0%;}
+20%{left:0%;}
+
+30%{left:-19%;}
+40%{left:-19%;}
+
+50%{left:-38%;}
+60%{left:-38%;}
+
+70%{left:-57%;}
+80%{left:-57%;}
+
+90%{left:-76%;}
+100%{left:-76%;}
+}
+
+#banner
+{
+width:600%;
+height:600px;
+box-shadow:10px 10px 5px white;
+}
+
+.pic
+{
+position:relative;
+width:19%;
+height:600px;
+margin:-2px;
+animation:runbanner 20s ease-out infinite alternate;
+margin-left:-8px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body{background:pink;}
+	
+	#banner{height:150px;}
+		
+	.pic{height:150px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{background:cyan;}
+
+	#banner{height:250px;}
+		
+	.pic{height:250px;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body{background:seagreen;}
+
+	#banner{height:350px;}
+		
+	.pic{height:350px;}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body{background:orange;}
+
+	#banner{height:600px;}
+		
+	.pic{height:600px;}
+
+}
+
+</style>
+
+<body>
+
+<div id="banner">
+
+<img src="Images/n3.jpg" class="pic">
+<img src="Images/n2.jpg" class="pic">
+<img src="Images/n1.jpg" class="pic">
+<img src="Images/n5.jpg" class="pic">
+<img src="Images/n6.jpg" class="pic">
+
+
+</div>
+
+
+
+</body>
+
+</html>

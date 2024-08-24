@@ -1,0 +1,44 @@
+<!doctype>
+
+<html>
+
+<head>
+<title>Banner</title>
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+<h1><i><u><font face="arial Black">Digital Banner</font></u></i></h1>
+</head>
+
+<style>
+
+@keyframes pic
+{
+10%{background-image:url(Images/g1.gif);}
+20%{background-image:url(Images/g2.gif);}
+40%{background-image:url(Images/g3.gif);}
+60%{background-image:url(Images/g4.gif);}
+80%{background-image:url(Images/g5.gif);}
+100%{background-image:url(Images/g6.gif);}
+}
+
+#banner
+{
+width:80%;
+height:650px;
+box-shadow:10px 10px 5px gray;
+margin:auto;
+border:1px black dashed;
+background-image:url(Images/g6.gif);
+background-repeat:no-repeat;
+background-size:cover;
+animation:pic 20s infinite;
+}
+
+</style>
+
+<body style="text-align:center" bgColor="#ccfff5">
+
+<div id="banner"></div>
+
+</body>
+
+</html>

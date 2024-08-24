@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>ANIMATION</title>
+<h1><font color="white"><i><u>Picture Animation</u></i></font></h1>
+<a href="practicepages.html">Back</a>
+</br>
+</head>
+<style>
+
+@keyframes glow
+{
+from{box-shadow:10px 10px 10px darkseagreen;}
+to{box-shadow:10px 10px 10px cyan;}
+}
+
+.picstyle
+{
+width:10%;
+margin:100px;
+border-radius:200px;
+cursor:pointer;
+box-shadow:5px 5px 10px darkseagreen;
+transition:1s;
+
+border:5px aquamarine ridge;
+}
+
+.picstyle:hover
+{
+transform:scale(2) rotate(360deg);
+border-radius:10px;
+animation:glow 2s infinite alternate;
+}
+
+</style>
+
+<body bgColor="black" style="text-align:center">
+
+<img src="Images/p2.jpg" class="picstyle" alt="Holiday Desination" title="Holiday Destination">
+
+<img src="Images/p3.jpg" class="picstyle" alt="Holiday Desination" title="Holiday Destination">
+
+<img src="Images/p4.jpg" class="picstyle" alt="Holiday Desination" title="Holiday Destination">
+
+<img src="Images/p5.jpg" class="picstyle" alt="Holiday Desination" title="Holiday Destination">
+
+<img src="Images/p6.jpg" class="picstyle" alt="Holiday Desination" title="Holiday Destination">
+
+</body>
+
+</html>
