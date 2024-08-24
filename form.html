@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<title>login form</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="main.css" rel="stylesheet" type="text/css">
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+</head>
+
+<style>
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+   
+	#box{width:80%;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	
+	#box{width:80%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	
+	#box{width:40%;}
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	
+	#box{width:20%;}
+}
+
+</style>
+
+<body>
+
+<div id="box">
+<form action="http://tataplay/user/get.php" method="post">
+<table border="0" cellpadding="10">
+<caption style="color:black;font-size:40px">Login Form</caption>
+
+<tr><td><label>Login</label></td><td><input type="text" placeholder="Type User Id" Title="User Id"></td></tr>
+
+<tr><td><label>Password</label></td><td><input type="Password" placeholder="Password" Title="User Password"></td></tr>
+
+<tr><td></td><td><input type="submit" value="Login"><input type="reset"></td></tr>
+
+
+
+</form>
+</div>
+
+</body>
+
+</html>

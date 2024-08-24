@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Iframe</title>
+<a href="practicepages.html"><img src="Images/I10.png"></a>
+</br>
+</head>
+<style>
+#menu{background:#80dfff;
+width:20%;
+box-shadow:10px 10px 10px gray;
+float:left;}
+
+#menu ol li{list-style:none;
+text-align:left;
+padding:20px;
+cursor:pointer;
+text-align:center;
+margin-left:-40px;
+border-bottom:2px black solid;
+transition:0.50s;
+}
+
+#menu ol li:hover
+{
+background:#ffe6f2;
+padding:25px;
+}
+
+</style>
+<body style="text-align:center">
+<div>
+	<div id="menu">
+		<ol>
+		<li style="background:#ffb3d9;margin-left:-40px;text-align:center;border:1px black solid"><a href="Fashion.html" target="myframe">Menu</a></li>
+		<li><a href="Fashion.html" target="myframe">Fashion store</a></li>
+		<li><a href="aboutfashion.html" target="myframe">About</a></li>
+		
+		<li><a href="dress.html" target="myframe">Dresses</a></li>
+		<li><a href="kurtis.html" target="myframe">Kurtis</a></li>
+		<li><a href="shirt.html" target="myframe">shirts</a></li>
+	</div>
+<iframe name="myframe" src="Fashion.html" style="width:75%;height:900px" frameborder="1"></iframe>
+
+</div>
+
+</body>
+</html>
