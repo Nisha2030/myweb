@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#myufo
+{
+    width:15%;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+</style>
+
+<body>
+    
+<img id="myufo" src="images/ufo.gif">
+
+<script>
+
+var l = 0
+var t = 0
+var speed = 10
+var k
+var s = 10
+var tilt = 20
+
+
+function myaction(event)
+{
+    k = event.keyCode
+    document.title = event.keyCode
+
+    /* For Speed */
+    if((k==83)&&(speed<100))
+    {
+        speed+=10
+        document.title = speed
+    }
+
+    /* for left arrow */
+    if(k==39)
+    {
+        s+=speed
+        myufo.style.transform="rotateY(0deg)"
+        myufo.style.left=s+"px"
+    }
+
+    /* for right arrow */
+    if(k==37)
+    {
+        s-=speed
+        myufo.style.transform="rotateY(180deg)"
+        myufo.style.left=s+"px"
+    }
+
+    /* for down arrow */
+    if(k==40)
+    {
+        s+=speed
+        myufo.style.transform="rotateY(20deg)"
+        myufo.style.top=s+"px"
+    }
+
+    /* for up arrow */
+    if(k==38)
+    {
+        s-=speed
+        l+=speed
+        myufo.style.transform="rotateY(-20deg)"
+        myufo.style.top=s+"px"
+       
+    }
+
+
+
+
+
+}
+
+document.body.addEventListener("keydown",myaction)
+
+
+
+</script>
+
+</body>
+</html>
