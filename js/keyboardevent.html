@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background:url(Images/bg4.gif);text-align: center;">
+   
+    <h1 style="color:white;font-size:50px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Play With Keyboard</h1>
+
+<h2 id="mes" style="color:white;">Play With Keyboard Event with alphabets a to z</h2>
+
+<script>
+
+var m = document.getElementById("mes")
+var k;
+var s = new Audio("sound2/A0.mp3")
+//
+
+s.play()
+//alert(s.src)
+
+function f1(event)
+{
+    event.preventDefault()
+    k = event.keyCode
+    m.innerHTML="code = "+ k+  " character = " + event.keyCode
+    document.title = "key Code ="+k
+
+    switch(event.key)
+    {
+
+        case "a" :
+        s.src = "sound2/A0.mp3";s.play()
+        document.bgColor ="red"
+        break;
+        
+
+        case "b" :
+        s.src = "sound2/A1.mp3";s.play()
+        document.bgColor ="purple"
+        break;
+
+        case "c" :
+        s.src = "sound2/A2.mp3";s.play()
+        document.bgColor ="blue"
+        break;
+
+        case "d" :
+        s.src = "sound2/A3.mp3";s.play()
+        document.bgColor ="cyan"
+        break;
+
+        case "e" :
+        s.src = "sound2/A4.mp3";s.play()
+        document.bgColor ="pink"
+        break;
+
+        case "f" :
+        s.src = "sound2/A5.mp3";s.play()
+        document.bgColor ="orange"
+        break;
+
+        case "g" :
+        s.src = "sound2/A6.mp3";s.play()
+        document.bgColor ="yellow"
+        break;
+
+        case "h" :
+        s.src = "sound2/A7.mp3";s.play()
+        document.bgColor ="green"
+        break;
+
+        case "i" :
+        s.src = "sound2/Ab1.mp3";s.play()
+        document.bgColor ="gray"
+        break;
+
+        case "j" :
+        s.src = "sound2/Ab2.mp3";s.play()
+        document.bgColor ="magenta"
+        break;
+
+        case "k" :
+        s.src = "sound2/Ab3.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "l" :
+        s.src = "sound2/Ab4.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "m" :
+        s.src = "sound2/Ab5.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+
+        case "n" :
+        s.src = "sound2/Ab6.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "o" :
+        s.src = "sound2/Ab7.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "p" :
+        s.src = "sound2/B0.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "q" :
+        s.src = "sound2/B1.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "r" :
+        s.src = "sound2/B2.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "s" :
+        s.src = "sound2/B3.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "t" :
+        s.src = "sound2/B4.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "u" :
+        s.src = "sound2/B5.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "v" :
+        s.src = "sound2/B6.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "w" :
+        s.src = "sound2/B7.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "x" :
+        s.src = "sound2/Bb0.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "y" :
+        s.src = "sound2/Bb1.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+        case "z" :
+        s.src = "sound2/Bb2.mp3";s.play()
+        document.bgColor ="red"
+        break;
+
+
+    }
+
+}
+
+document.body.addEventListener("keypress",f1)
+document.title ="ready"
+
+
+</script>
+
+</body>
+</html>

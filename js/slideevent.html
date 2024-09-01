@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#container
+{
+    border:1px solid black;
+    width:400px;
+    height:400px;
+    margin:auto;
+    box-shadow:10px 10px 10px gray;
+}
+
+.mypic
+{
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+
+#pic
+{
+    width: 2000px;
+    cursor: pointer;
+    transition: 0.50s;
+}
+
+</style>
+
+<body>
+
+    <div id="container">
+
+        <script>
+
+        var c=400
+        var t=1
+        var d = document.getElementById("pic")
+
+    function movenext()
+        {
+            if(c>=-800)
+                {
+                   
+                    c-=400
+                }
+
+          
+           
+
+            d.style.marginLeft = c+"px"
+            document.title=c
+
+            
+
+        }
+
+    function moveprev()
+        {
+            if(c>= -400)
+        {
+            c = -400
+        }
+
+            c +=400
+
+            d.style.marginLeft = c+"px"
+
+        }
+
+
+
+
+        </script>
+    
+<div id="mask" style="width:400px;height:400px;overflow: hidden;">
+
+<div id="pic">
+    <img src="Images/s1.jpg" class="mypic">
+    <img src="Images/s2.jpg" class="mypic">
+    <img src="Images/s3.jpg" class="mypic">
+    <img src="Images/s4.jpg" class="mypic">
+</div>
+
+</div>
+
+<div>
+    <button onclick="movenext()">Next</button>
+    <button onclick="moveprev()" style="margin-left:310px;">Prev</button>
+
+</div>
+
+<script>
+
+var c=400
+var t=1
+var d = document.getElementById("pic")
+
+d.onclick = function()
+{
+    if((c>=-800)&&(t==1))
+{
+    c-=400
+}
+else
+{
+    t=0
+}
+
+if((c<-100)&&(t==0))
+{
+    c+=400
+}
+else
+{
+    t=1
+}
+
+this.style.marginLeft = c+"px"
+document.title = c
+
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
