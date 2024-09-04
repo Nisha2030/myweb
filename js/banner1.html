@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#banner
+{
+    width:600%;
+    height:500px;
+    background: red;
+    position:relative;
+    transition:0.50s;
+    
+}    
+
+.pic
+{
+  width:16.5%;
+  height:500px;  
+  position: relative;
+}
+
+#mybutton
+{
+    position:relative;
+    top:-300px;
+    font-family: arial black;
+}
+
+#b2
+{
+    margin-left:90%;
+    cursor:pointer;
+}
+
+#b1
+{
+    margin-left:1%;
+    cursor:pointer;
+}
+
+</style>
+
+<body>
+    
+<div id="banner">
+
+<img class="pic" src="Images/n1.jpg">
+<img class="pic" src="Images/n2.jpg">
+<img class="pic" src="Images/n3.jpg">
+<img class="pic" src="Images/n4.jpg">
+<img class="pic" src="Images/n5.jpg">
+<img class="pic" src="Images/n6.jpg">
+
+</div>
+
+<div id="mybutton">
+    <button id="b1">Next</button>
+    <button id="b2">Previous</button>
+</div>
+
+<script>
+
+var b1 = document.getElementById("b1")
+var b2 = document.getElementById("b2")
+var banner = document.getElementById("banner")
+
+var c = 0
+
+function next()
+{
+    if(c<500)
+        {
+            c=c+100
+            banner.style.left=-c+"%"
+        }
+
+       document.title = c 
+}
+
+function prev()
+{
+    if(c>0)
+        {
+            c=c-100
+            banner.style.left=-c+"%"
+        }
+
+       document.title = c 
+}
+
+b1.addEventListener("click",next)
+b2.addEventListener("click",prev)
+
+
+</script>
+
+</body>
+</html>
