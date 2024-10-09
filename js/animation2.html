@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes ani
+    {
+        from{transform:rotate(0deg)}
+        to{transform:rotate(360deg)}
+    }
+
+    body
+    {
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background:black;
+    }
+
+    .trail
+    {
+        position:absolute;
+        width:0px;
+        height:0px;
+        pointer-events:none;
+        animation:ani 2s linear infinite alternate;
+    }
+</style>
+<body>
+    <script>
+        const t = [];
+        const m = 50;
+        var c = "🕊️🫧❄️"
+
+        document.addEventListener('mousemove', (event) =>
+        {
+            const d = document.createElement('div');
+            c+=1
+            d.style.fontSize = Math.round(Math.random()*30)+"px"
+            d.innerHTML="&#"+c+";"
+            d.className='trail';
+            d.style.left = `${event.clientX}px`;
+            d.style.top = `${event.clientY}px`;
+            document.body.appendChild(d);
+            t.push(d);
+
+            if (t.length > m)
+            {
+                const o = t.shift();
+                document.body.removeChild(o);
+            }
+        })
+    </script>
+    
+</body>
+</html>

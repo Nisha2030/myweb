@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+.mystyle
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+</style>
+
+<body style="background: black;">
+    
+<div id="pic">💕</div>
+
+<script>
+
+var c
+var ch = ["🪼","✨","🌟","❤️"] 
+var d = document.getElementById("pic")
+var s = 1
+var r = 0
+
+d.classList.add("mystyle")
+
+function ani()
+{
+    c = Math.round(Math.random()*ch.length)
+    d.innerHTML=ch[c]
+
+    if(s<=3)
+    {
+        s++
+        r+=50
+    }
+    else
+    {
+        s=1
+    }
+
+    d.style.transform="scale("+s+") rotate("+r+"deg)"
+    d.style.left = Math.random()*window.innerWidth+"px"
+    d.style.top = Math.random()*window.innerWidth+"px"
+
+    setTimeout(ani,200)
+
+}
+
+ani()
+
+function f1(e)
+{
+    document.title = e.pageX+","+e.pageY
+    d.style.top = e.pageY+"px"
+    d.style.left = e.pageX+"px"
+}
+
+document.addEventListener("mousemove",f1)
+
+</script>
+
+</body>
+</html>
