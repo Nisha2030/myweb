@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+</head>
+
+<style>
+
+.a_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+     left:10px;
+    margin-top: 100px;
+}
+
+.c_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:60px;
+    margin-top: 100px;
+}
+
+.e_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:112px;
+    margin-top: 100px;
+}
+
+.g_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:162px;
+    margin-top: 100px;
+}
+
+.i_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:215px;
+    margin-top: 100px;
+}
+
+.k_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:268px;
+    margin-top: 100px;
+}
+
+.m_note
+{
+    position: absolute;
+    padding-top: 258px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+    z-index: 10;
+    background-color: white;
+    cursor:pointer;
+    left:320px;
+    margin-top: 100px;
+}
+
+
+
+.b_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 12px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:35px;
+ margin-top:100px;
+}
+
+.d_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 11px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:88px;
+ margin-top:100px;
+}
+
+.f_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 12px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:138px;
+ margin-top:100px;
+}
+
+.h_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 11px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:188px;
+ margin-top:100px;
+}
+
+.j_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 12px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:248px;
+ margin-top:100px;
+}
+
+.l_note
+{
+    z-index:20;
+  position: absolute;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 12px;
+  padding-top: 150px;
+  color: white;
+  border-color:white;
+ background-color: black;
+  cursor: pointer;
+ left:298px;
+ margin-top:100px;
+}
+
+
+
+</style>
+
+<body bgColor="black">
+
+    <script>
+
+        var ap = new Audio()
+        ap.src="sound3/a.wav";
+        
+        var bp = new Audio()
+        bp.src="sound3/b.wav";
+        
+        var cp = new Audio()
+        cp.src="sound3/c.wav";
+        
+        var dp = new Audio()
+        dp.src="sound3/d.wav";
+        
+        var ep = new Audio()
+        ep.src="sound3/e.wav";
+        
+        var fp = new Audio()
+        fp.src="sound3/f.wav";
+        
+        var gp = new Audio()
+        gp.src="sound3/a.wav";
+        
+        var aap = new Audio()
+        aap.src="sound3/k.mp3";
+        
+        var bbp = new Audio()
+        bbp.src="sound3/i.mp3";
+        
+        var ccp = new Audio()
+        ccp.src="sound3/j.mp3";
+        
+        var ddp = new Audio()
+        ddp.src="sound3/k.mp3";
+        
+        var eep = new Audio()
+        eep.src="sound3/i.mp3";
+        
+        var ffp = new Audio()
+        ffp.src="sound3/j.mp3";
+        
+        </script>
+    
+<button class="a_note" onclick="ap.play()">A</button>
+<button class="c_note" onclick="bp.play()">B</button>
+<button class="e_note" onclick="cp.play()">C</button>
+<button class="b_note" onclick="aap.play()">a</button>
+<button class="d_note" onclick="bbp.play()">b</button>
+<button class="g_note" onclick="dp.play()">D</button>
+<button class="f_note" onclick="ccp.play()">c</button>
+<button class="i_note" onclick="ep.play()">E</button>
+<button class="h_note" onclick="ddp.play()">d</button>
+<button class="k_note" onclick="fp.play()">F</button>
+<button class="j_note" onclick="eep.play()">e</button>
+<button class="m_note" onclick="gp.play()">G</button>
+<button class="l_note" onclick="ffp.play()">f</button>
+
+<div id="div1"><h1 style="margin:20px;"><i><font color="white" size="7">Piano🎹🎹🎹</font></i></h1></div>
+
+
+
+</body>
+</html>
