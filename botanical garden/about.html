@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+
+    @keyframes slide
+    {
+        from{transform: translateY(60px);}
+        to{transform: translateY(0);}
+    }
+
+    @keyframes fadein
+    {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    #container
+    {
+        width:100%;
+        height: 500px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/l12.jpg);
+    }
+
+    #text
+    {
+        font-size: 60px;
+        text-align: center;
+        font-family: arial;
+        font-weight: 600;
+        color: #2b331f;
+        animation:slide 2s ease-out forwards,fadein 2s ease-out forwards
+    }
+
+    #aboutus
+    {
+        width: 50%;
+        text-align: center;
+        color: #2b331f;
+        font-size: 40px;
+        padding: 20px;
+        font-family: arial;
+        border-bottom: #2b331f solid;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    #para
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: gabriola;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        border-radius: 20px;
+        
+        padding: 20px;
+    }
+
+    .head1
+    {
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-bottom: #2b331f solid;
+        text-align: center;
+        border-radius: 20px;
+        color: #2b331f;
+        padding: 20px;
+        font-size: 35px;
+        font-family: arial;
+        
+    }
+
+    .para1
+    {
+        width: 90%;
+        font-size: 30px;
+        font-family: gabriola;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .gallery
+    {
+        width: 100%;
+        height: 330px;
+        margin-top: 40px;
+        background-color:#2b331f;
+        display: flex;
+    }
+
+    .pic1{
+        width: 20%;
+        height: 250px;
+        margin: 40px;
+        border-radius: 20px;
+         border: 1px black solid;
+        border-radius: 20px;
+        transition: 0.50s;
+    }
+
+    .gall
+    {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .pic1:hover
+    {
+        transform: scale(1.06);
+        box-shadow: 3px 3px 10px white;
+    }
+
+    .topic
+    {
+        width: 35%;
+        height: 80px;
+        border-bottom: 1px #2b331f solid;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 35px;
+        font-family: Arial;
+    }
+
+    .topic3
+    {
+        width: 35%;
+        height: 80px;
+        border-bottom: 1px #2b331f solid;
+        margin-top: -30px;
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 35px;
+        font-family: Arial;
+    }
+
+    .topic1
+    {
+        width: 95%;
+        font-size: 30px;
+        font-family: gabriola;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 50px;
+    
+    }
+
+    .topic2
+    {
+        width: 95%;
+        font-size: 30px;
+        font-family: gabriola;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .list
+    {
+        width: 100%;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .list li
+    {
+        font-size: 30px;
+        font-family: gabriola;
+    }
+</style>
+
+<body>
+
+    <div id="header">
+
+        <div id="nm"><img src="images/logo.png" class="logo"></div>
+    
+    <ol>
+        
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="education.html">Education</a></li>
+   
+    <li><a href="contact.html">Contact</a></li>
+    
+    </ol>
+    
+    </div>
+
+    <div id="container">
+
+        <div id="text">Botanical Garden and Plant 
+            <br/>conservation</div>
+
+    </div>
+
+
+    <a name="about">
+    <div id="aboutus">
+
+     🌿About Us🌿
+    </div>
+
+    <div id="para">
+        Botanical gardens and plant conservatories play a crucial role in the conservation of India's vast and diverse flora. India, known for its rich biodiversity, is home to a wide range of plant species, including many that are endemic or threatened. These gardens not only serve as green havens but also function as centers for education, research, and conservation efforts.
+    </div>
+
+    <div class="head1">Botanical Gardens in India</div>
+
+
+    <div class="para1">
+        Botanical gardens and plant conservatories play a crucial role in the conservation of India's vast and diverse flora. India, known for its rich biodiversity, is home to a wide range of plant species, including many that are endemic or threatened. These gardens not only serve as green havens but also function as centers for education, research, and conservation efforts.
+        
+        Botanical Gardens in India
+        India's botanical gardens date back to the colonial era, with some of the earliest established by the British to study and introduce exotic species. Today, these gardens are essential in preserving the country's unique plant heritage.</div>
+
+
+        <div class="gallery">
+            <div class="pic1"> <img class="gall" src="images/b1.jpeg"></div>
+            <div class="pic1"> <img class="gall" src="images/b2.jpeg"></div>
+            <div class="pic1"> <img  class="gall" src="images/b3.jpg"></div>
+            <div class="pic1"> <img  class="gall" src="images/b4.jpg"></div>
+
+        </div>
+
+        <div class="topic">
+
+            Role in Plant Conservation
+
+        </div>
+
+        <div class="topic1">
+            Botanical gardens in India are at the forefront of plant conservation efforts. These institutions aim to protect endangered and rare species through ex-situ conservation — the practice of conserving plants outside their natural habitats. This is critical for species that face threats due to habitat loss, climate change, or overexploitation.
+        </div>
+
+        <div class="topic" >Key Conservation Efforts:</div>
+
+        <div class="list">
+            <ol>
+                <li>Seed Banks and Nurseries: Many gardens maintain seed banks and nurseries where rare and endangered plants are propagated and stored. This helps ensure that even if a species is lost in the wild, its genetic material remains preserved for future restoration projects.</li>
+
+                <li>Education and Awareness: Botanical gardens act as learning centers, educating the public about the importance of biodiversity, sustainable gardening practices, and the need to protect natural habitats.</li>
+                <li>
+                    Research and Collaboration: These institutions often collaborate with universities, NGOs, and government agencies to conduct research on plant genetics, habitat restoration, and sustainable agriculture.
+                </li>
+                <li>
+                    Medicinal Plant Conservation: India has a rich tradition of using plants in traditional medicine. Botanical gardens play a key role in conserving medicinal plant species, ensuring they are available for future generations and studied for potential pharmaceutical applications.
+                </li>
+            </ol>
+        </div>
+
+        <div class="topic3">
+            Challenges and Opportunities
+        </div>
+
+        <div class="topic2">
+            While botanical gardens in India are vital for plant conservation, they face challenges such as urbanization, lack of funding, and climate change. However, they also present opportunities for eco-tourism, research, and community involvement in conservation efforts.
+<br/>
+By continuing to innovate and expand their conservation efforts, India’s botanical gardens are not only preserving the nation's flora but also contributing to global biodiversity protection.
+        </div>
+    
+
+        <div id="footer">
+
+            <div class="box"><h2>------Buy Plants, Save Earth------</h2></div>
+            <div class="box"><h2>------Think green, live clean------</h2></div>
+      
+            <div id="plantpic">
+      
+              <img src="images/l19.jpg">
+            </div>
+      
+            <div class="links">
+      
+              <ol>
+                  <li><b>QUICK LINKS</b></li>
+                  <hr/>
+                  <li>. Home</li>
+                  <li>. About</li>
+                  <li>. Eduction Programme</li>
+                 
+                  <li>. Contact us</li>
+              </ol>
+            </div>
+      
+            <div class="links">
+      
+              <ol>
+                  <li><b>GET IN TOUCH</b></li>
+                  <hr/>
+                  <li>Botanical Gardens of India</li>
+                  <br/>
+                  <li>support@botanicgarden.org</li>
+                  <li>+91-2223334445</li>
+              </ol>
+            </div>
+      
+      
+          </div>
+      
+          <div id="line">@ BOTANICAL GARDENS OF INDIA 2024 </div>
+</body>
+</html>

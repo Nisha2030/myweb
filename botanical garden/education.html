@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+
+@keyframes slide
+    {
+        from{transform: translateY(60px);}
+        to{transform: translateY(0);}
+    }
+
+    @keyframes fadein
+    {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+
+#container
+    {
+        width:100%;
+        height: 500px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/l12.jpg);
+    }
+
+    #text
+    {
+        font-size: 60px;
+        text-align: center;
+        font-family: arial;
+        font-weight: 600;
+        color: #2b331f;
+        animation:slide 2s ease-out forwards,fadein 2s ease-out forwards
+    }
+
+    #aboutus
+    {
+        width: 80%;
+        text-align: center;
+        color: #2b331f;
+        font-size: 40px;
+        padding: 20px;
+        font-family: arial;
+        border-bottom: 2px #2b331f solid;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    #para
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: gabriola;
+        box-shadow: 3px 3px 10px rgb(99, 98, 98);
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .head1
+    {
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-bottom: #2b331f solid;
+        text-align: center;
+        border-radius: 20px;
+        color: #2b331f;
+        padding: 20px;
+        font-size: 35px;
+        font-family: arial;
+        
+    }
+
+    .topic
+    {
+        width: 24%;
+        height: 80px;
+        border-bottom: 1px #2b331f solid;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 35px;
+        font-family: Arial;
+        border-bottom: 1px black solid ; 
+    }
+
+    .main-pic
+    {
+        width: 100%;
+        height: 400px;
+        display: flex;
+       
+        justify-content: space-around;
+        
+        
+    }
+
+    .pics
+    {
+        width: 25%;
+        height: 300px;
+        background-color: antiquewhite;
+        margin-top: 50px;
+    }
+
+    .pics1
+    {
+        width: 100%;
+        height: 300px;
+        transition: 1.1s ease-in-out;
+    }
+
+    .pics1:hover
+    {
+        cursor: pointer;
+        transform: scale(1.1);
+        border-radius: 15px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+    }
+
+    .container1 {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #a5d6a7 0%, #2b331f 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.paragraph {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.paragraph:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.paragraph p {
+    font-size: 28px;
+    font-family: 'Gabriola', serif;
+    color: #2b331f;
+    line-height: 1.6;
+}
+
+.paragraph strong {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.con
+{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    font-size: 50px;
+    font-family: 'Gabriola', serif;
+    color: #2b331f;
+    text-align: center;
+    
+}
+
+.para2
+{
+    width: 100%;
+    height: 150px;
+    font-size: 28px;
+    font-family: 'Gabriola', serif;
+    color: #2b331f;
+    line-height: 1.6;
+    padding: 25px;
+}
+
+</style>
+
+<body>
+    
+    <div id="header">
+
+        <div id="nm"><img src="images/logo.png" class="logo"></div>
+    
+    <ol>
+        
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    
+    </ol>
+    
+    </div>
+
+    <div id="container">
+
+        <div id="text">Educational Programs and 
+            <br/>Workshops</div>
+
+    </div>
+
+    <a name="education">
+    <div id="aboutus">
+
+        🌿Educational Programs and Workshops
+        Introduction🌿
+       </div>
+
+
+
+    <div class="head1">Educational Initiatives</div>
+
+    <div class="topic" >Gardening Classes </div>
+
+    <div class="main-pic">
+        <div class="pics"> <img class="pics1" src="images/e1.jpg"></div>
+        <div class="pics"> <img class="pics1" src="images/e2.jpg"></div>
+    </div>
+
+    
+
+
+        <div class="container1">
+
+            <div class="paragraph">
+            <p><strong>Beginner Gardening:</strong> These classes cover the basics of gardening, including soil preparation, plant selection, and maintenance techniques. Ideal for those new to gardening, these classes help participants develop confidence in their gardening abilities.</p> </div>
+            <div class="paragraph">
+            <p><strong>Advanced Techniques:</strong> For experienced gardeners, advanced classes may focus on topics like permaculture, organic gardening, or hydroponics, allowing participants to deepen their knowledge and skills.
+                Plant Care Workshops</p>
+            </div>
+                <div class="paragraph">
+
+                   
+            <p><strong>Pruning Techniques: </strong>Workshops that teach the proper techniques for pruning different types of plants to promote healthy growth and flowering.
+                Pest Management: Sessions focused on natural pest management strategies, helping gardeners identify and manage common pests without the use of harmful chemicals.
+                Nature Education Programs</p></div>
+                <div class="paragraph">
+            <p><strong>Community Involvement: </strong>Programs that encourage community participation in gardening initiatives, such as volunteer days, plant swaps, and conservation efforts. These programs foster a sense of community and shared responsibility for the environment.</p>
+        </div>
+    
+
+    </div>
+
+    <div class="topic" >Special Events </div>
+
+    <div class="main-pic">
+        <div class="pics"> <img class="pics1" src="images/s1.jpg"></div>
+        <div class="pics"> <img class="pics1" src="images/s2.jpeg"></div>
+    </div>
+
+    <div class="container1">
+        <div class="paragraph">
+            <p><strong>Seasonal  Festivals:</strong> Many botanical gardens host seasonal events that celebrate the beauty of flowers and gardening. Examples include flower shows, garden tours, and workshops featuring local experts.</p>
+        </div>
+        <div class="paragraph">
+            <p><strong>Guest Lectures: </strong>Invite experts in horticulture, botany, or environmental science to speak about current topics in plant conservation, sustainable gardening practices, and landscape design.
+        </p>
+    </div>
+
+    </div>
+
+    <div class="con"> Conclusion
+
+    </div>
+
+    <div class="para2">Educational programs and workshops at botanical gardens provide valuable opportunities for individuals of all ages to connect with nature, enhance their gardening skills, and engage with their communities. By participating in these initiatives, visitors can contribute to the conservation of plant diversity and promote sustainable practices.</div>
+
+    <div id="footer">
+
+        <div class="box"><h2>------Buy Plants, Save Earth------</h2></div>
+        <div class="box"><h2>------Think green, live clean------</h2></div>
+  
+        <div id="plantpic">
+  
+          <img src="images/l19.jpg">
+        </div>
+  
+        <div class="links">
+  
+          <ol>
+              <li><b>QUICK LINKS</b></li>
+              <hr/>
+              <li>. Home</li>
+              <li>. About</li>
+              <li>. Eduction Programme</li>
+              
+              <li>. Contact us</li>
+          </ol>
+        </div>
+  
+        <div class="links">
+  
+          <ol>
+              <li><b>GET IN TOUCH</b></li>
+              <hr/>
+              <li>Botanical Gardens of India</li>
+              <br/>
+              <li>support@botanicgarden.org</li>
+              <li>+91-2223334445</li>
+          </ol>
+        </div>
+  
+  
+      </div>
+  
+      <div id="line">@ BOTANICAL GARDENS OF INDIA 2024 </div>
+
+</body>
+</html>

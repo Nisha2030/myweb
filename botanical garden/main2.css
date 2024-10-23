@@ -1,0 +1,47 @@
+.main2
+{
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    
+}
+
+.main2 h1
+{
+    font-size: 50px;
+    font-family: arial;
+    color: #2b331f;
+}
+
+.headpic 
+{
+    width: 80%;
+    height: 650px;
+    border: 1px black solid;
+    margin: auto;
+    
+}
+.headpics1
+{
+    width: 100%;
+    height: 650px;
+}
+
+.content1
+{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    
+}
+
+
+.content1 p
+{
+    font-size: 35px;
+    font-family: gabriola;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
