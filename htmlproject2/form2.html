@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<title>form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="main.css" rel="stylesheet" type="text/css">
+<a href="project.html"><img src="images/I10.png"></a>
+</head>
+
+<style>
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+
+	#box{width:85%;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	
+	#box{width:80%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	
+	#box{width:50%;}
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	
+	#box{width:30%;}
+}
+
+
+
+</style>
+
+<body bgColor="#e6fff5">
+
+<div id="box">
+<form action="http://tataplay/user/get.php" method="post">
+<table border="0" cellpadding="10">
+<caption style="color:black;font-size:20px">Sign Up</caption>
+
+<tr><td><label>First Name</label></td><td><input type="text" Title="First name" pattern="[A-Za-z]{40}+" required></td></tr>
+
+<tr><td><label>Last Name</label></td><td><input type="text" Title="Last name" pattern="[A-Za-z]{40}+" required></td></tr>
+
+<tr><td><label>E-mail</label></td><td><input type="email" required></td></tr>
+
+<tr><td><label>Phone</label></td><td><input type="number" required></td></tr>
+
+
+<tr><td><label>Country</label></td>
+<td>
+<select>
+<option value="India">India</option>
+<option value="Iran">Iran</option>
+<option value="Indonesia">Indonesia</option>
+<option value="China">China</option>
+<option value="India">Colombia</option>
+<option value="India">Canada</option>
+<option value="India">Germany</option>
+<option value="India">Greece</option>
+<option value="India">Georgia</option>
+<option value="India">Sweden</option>
+<option value="India">Swizterland</option>
+<option value="India">Spain</option>
+</td>
+</tr>
+
+<tr><td><label>City</label></td><td><input list="City" name="mylist" id="mylist" required>
+<datalist id="City">
+<option value="Delhi"></option>
+<option value="Banglore"></option>
+<option value="Jaipur"></option>
+<option value="Kolkata"></option>
+<option value="Mumbai"></option>
+<option value="Lucknow"></option>
+<option value="Bhopal"></option>
+<option value="Visakhapatnam"></option>
+</datalist>
+</td></tr>
+
+
+<tr><td><label>Address</label></td><td><input type="text" Title="Address" pattern="[A-Za-z]{40}+" required></td></tr>
+
+<tr><td><label>Gender</label></td>
+<td>
+Male<input type="radio" name="gender" value="Male"required>
+Female<input type="radio" name="gender" value="Female"required>
+Others<input type="radio" name="gender" value="Others"required>
+</td>
+</tr>
+
+<tr><td></td><td><input type="submit" value="Register"><input type="reset"></td></tr>
+
+
+
+</form>
+</div>
+
+</body>
+
+</html>
