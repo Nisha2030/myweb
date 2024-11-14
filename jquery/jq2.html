@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<style>
+
+body
+{
+    text-align: center;
+}
+
+#pic
+{
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+#b1
+{
+    width: 10%;
+    height: 40px;
+    font-size: 25px;
+    margin:20px;
+    border-radius: 8px;
+    transition: 0.50s;
+}
+
+#b1:hover{
+    cursor:pointer;
+    color:aliceblue;
+    background: rgb(85, 3, 23);
+}
+
+</style>
+
+<body>
+    
+<div>
+
+<button id="b1">Hide</button>
+<br/>
+<img src="Images/d2.jpg" id="pic">
+
+</div>
+
+<script>
+
+    var b = document.getElementById("b1")
+    var pic = document.getElementById("pic")
+
+$(document).ready(function()
+{
+
+$("#b1").click(function()
+{
+    $("#pic").toggle(1000,myaction())
+}
+)
+
+}
+)
+
+function myaction()
+{
+    if(b.innerHTML==="Hide")
+        {
+           
+            b.innerHTML="Show"
+//alert(pic.src)
+            
+
+            if(pic.src=="http://127.0.0.1:5500/jquery/Images/d1.jpg")
+                {
+                    pic.src="Images/d2.jpg"
+                }
+            else
+            {
+                pic.src="Images/d1.jpg"
+            }    
+
+        }
+
+        else
+        {
+            b.innerHTML="Hide"
+        }
+}
+
+document.title="ready"
+
+</script>
+
+</body>
+</html>
