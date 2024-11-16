@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<style>
+
+#card
+{
+    width:20%;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    box-shadow: 10px 10px 10px gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#card ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+}
+
+#card ul li
+{
+    font-size: 16px;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+#card p
+{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+<body>
+    
+    <div id="card">
+        <p>Menu</p>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>projects</li>
+            <li>login</li>
+        </ul>
+    
+    </div>
+
+    <script>
+
+
+$(document).ready(function()
+{
+   $("#card p").click(function()
+{
+    if($("#card ul").height()==0){
+    $("#card ul").animate({height:"400px"},400)
+    }
+    else
+    {
+        $("#card ul").animate({height:"0"},400)
+    }
+    
+})
+
+}
+)
+
+    </script>
+
+</body>
+</html>
