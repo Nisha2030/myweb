@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+
+</style>
+
+<body> 
+
+    <div id="menu-bar">
+<div id="m1"><img src="images/relogo.png" class="logo"></div>
+
+<div id="menu-bar-link">
+
+    <ol>
+
+        <li><a href="index.html">Home</a>
+        </li>
+
+      
+        <li><a href="#buy">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        
+
+    </ol>
+
+</div>
+
+</div>
+
+<div id="header-ban">
+        
+    <div id="header-txt">
+        <h1>A New Vision Of Comfort Life</h1>   
+    </div>
+
+</div>
+
+<div id="form">
+  <table cellpadding="10">
+      <tr>
+          <td><input type="text" title="Search" value="Search"></td>
+          <td>
+              <div class="custom-select">
+                  <label for="city">Select Your City:</label>
+                  <div class="select-box" onclick="toggleDropdown()">
+                      <span id="selected-city">--Choose a City--</span>
+                      <div id="city-dropdown" class="dropdown-content">
+                          <a href="delhi.html">Delhi</a>
+                          <a href="mumbai.html">Mumbai</a>
+                          <a href="banglore.html">Bangalore</a>
+                          <a href="jaipur.html">Jaipur</a>
+                      </div>
+                  </div>
+              </div>
+          </td>
+          <td>
+              <div class="price-input-wrapper">
+                  <div class="price-input">
+                      <label for="min-price">Min Price:</label>
+                      <input type="number" id="min-price" name="min-price" placeholder="e.g., 0" min="0" step="1">
+                  </div>
+                  <div class="price-input">
+                      <label for="max-price">Max Price:</label>
+                      <input type="number" id="max-price" name="max-price" placeholder="e.g., 1000" min="0" step="1">
+                  </div>
+              </div>
+          </td>
+          <td><input type="reset"></td>
+      </tr>
+  </table>
+</div>
+<a name="buy">
+<div class="prop-name"><h1>Property Types</h1></div>
+
+<div id="prop-type">
+
+ <div class="prop-pic"><a href="commercial.html"><img src="images/commercial.jpg" class="pic" ></a>
+
+    <h2>Commercial Property</h2>
+
+</div>
+
+<div class="prop-pic"><a href="residential.html"><img src="images/residential.jpg" class="pic" ></a> <h2>Residential Property</h2></div>
+
+</div>
+
+<div id="recent-prop">
+
+<h2>Recently Added</h2>
+<h3>Based on Preferences of users like you</h3>
+
+</div>
+    
+  
+        <div class="card-slider">
+            <!-- Card 1 -->
+
+            <div class="card">
+                <img src="images/r1.avif" alt="House Image">
+                <h1>Goyal Floors 1</h1>
+                <ul>
+                    <li>Sector 14,15 Dwarka, South West Delhi, New Delhi</li>
+                    <li>₹5.19 K - 9 K/sq.ft</li>
+                    <li>EMI starts at ₹14.83 K</li>
+                    <li>By Goyal Builders</li>
+                </ul>
+                <button><a href="goyal.html">MORE</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/r2.jpg" alt="House Image">
+                <h1>3 BHK Flat For Sale in Prestige Glenbrook</h1>
+                <ul>
+                    <li>Whitefield,Bangalore</li>
+                    <li>₹ 2.50 Cr.</li>
+                    <li>2061 Sq.Ft.</li>
+                    <li> Under Construction</li>
+                </ul>
+                <button><a href="prestige.html">MORE</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/r3.jpg" alt="House Image">
+                <h1>4 BHK Flat For Sale in Sobha Windsor</h1>
+                <ul>
+                    <li>Whitefield,Bangalore</li>
+                    <li>₹ 3.25 Cr.</li>
+                    <li>2244 Sq.Ft.</li>
+                    <li>Under Construction</li>
+                </ul>
+                <button><a href="shobha.html">MORE</button></a>
+            </div>
+
+            <div class="card">
+                <img src="images/r4.jpg" alt="House Image">
+                <h1>4 BHK Flat For Sale in Rustomjee Crown</h1>
+                <ul>
+                    <li>Prabhadevi,Mumbai</li>
+                    <li>₹ 15.0 Cr.</li>
+                    <li>2547 Sq.Ft.</li>
+                    <li>Ready to Move</li>
+                </ul>
+                <button><a href="crown.html">MORE</button></a>
+            </div>
+    
+    
+</div>
+
+<div id="recent-prop">
+
+    <h2>Featured Collections</h2>
+    <h3>Handpicked projects for you</h3>
+    
+    </div>
+
+    <div class="coll">
+        <img src="images/r5.jpg" class="coll-pic">
+        <a href="independent.html">
+        <div class="sub-coll"><h1>Independent House</h1></div>
+          </a>
+    </div>
+
+    <div class="coll2">
+      
+        <img src="images/r6.jpg" class="coll-pic">
+        <a href="luxury.html">
+        <div class="sub-coll2"><h1>Luxury House</h1></div>
+      </a>
+
+    </div>
+
+    <div class="coll3">
+        <img src="images/r7.jpg" class="coll-pic">
+        <a href="builder.html">
+        <div class="sub-coll3"><h1>Builder Floors</h1></div>
+          </a>
+    </div>
+
+
+    
+
+    
+
+<script>
+
+function toggleDropdown() {
+        document.getElementById("city-dropdown").classList.toggle("show");
+    }
+
+    $(".sub-coll").hide()
+    $(".sub-coll2").hide()
+    $(".sub-coll3").hide()
+
+$(document).ready(function () {
+
+    $(".coll").click(function()
+{
+    $(".sub-coll").show(800)
+   
+})
+
+   $(".coll").mouseleave(function()
+{
+    $(".sub-coll").hide(1000)
+})
+
+$(".coll2").click(function()
+{
+    $(".sub-coll2").show(800)
+   
+})
+
+   $(".coll2").mouseleave(function()
+{
+    $(".sub-coll2").hide(1000)
+})
+
+
+$(".coll3").click(function()
+{
+    $(".sub-coll3").show(800)
+   
+})
+
+   $(".coll3").mouseleave(function()
+{
+    $(".sub-coll3").hide(1000)
+})
+  
+})
+
+
+</script>
+
+<!--luxury section-->
+  <div class="luxury">
+   <h1>
+       Our Services
+   </h1>
+
+   <p>
+    We Offer A Wide Range Of Real Estate Services
+   </p>
+</div>
+
+
+
+<div class="luxury-detail">
+
+
+   <div class="luxury-info">
+
+       <div class="pic-info">
+       <img class="luxury-pic" src="images/buy.png">
+   </div>
+
+   <h1>
+    Commercial Property
+   </h1>
+
+   <button> <a href="commercial.html"> Learn More</button></a> 
+   </div>
+
+   <div class="luxury-info">
+
+       <div class="pic-info">
+           <img class="luxury-pic" src="images/com.jpg">
+       </div>
+
+       <h1>
+           Sell Property
+       </h1>
+
+       <button><a href="sell.html">Learn More</button></a>
+       </div>
+
+   
+
+
+   <div class="luxury-info">
+
+
+       <div class="pic-info">
+           <img class="luxury-pic" src="images/res.jpg">
+       </div>
+
+       <h1>
+           Residential Property
+       </h1>
+
+  
+       <button> <a href="residential.html"> Learn More</button></a>
+       </div>
+
+   </div>
+
+   
+   <section class="testimonial-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="client-info">
+          
+          <div>
+            <h3>Sunil Kumar</h3>
+            <p>Home Buyer</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "The team was amazing and helped me find my dream home effortlessly. Highly recommend!"
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="client-info">
+          
+          <div>
+            <h3>Amit Kumar</h3>
+            <p>Property Seller</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "Selling my property was stress-free and quick, thanks to their expertise!"
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="client-info">
+         
+          <div>
+            <h3>Sachin Kumar</h3>
+            <p>Investor</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "A professional and friendly team that truly understands the market. Great experience!"
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="client-info">
+          
+          <div>
+            <h3>Anurag Kashyap</h3>
+            <p>Tenant</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "I found a perfect rental property within days. Amazing service and support!"
+        </p>
+      </div>
+    </div>
+
+    
+  </section>
+
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-header">
+                <h2>Stay Updated with the Latest Listings!</h2>
+                <p>Subscribe to our newsletter to get exclusive updates on the latest properties, market trends, and special offers straight to your inbox.</p>
+            </div>
+            
+            <div class="newsletter-form">
+                <form action="your-backend-script-or-service" method="POST" id="newsletter-form">
+                    <input type="email" name="email" id="newsletter-email" placeholder="Enter your email address" required>
+                    <button type="submit" id="subscribe-btn">Subscribe Now</button>
+                </form>
+            </div>
+    
+            <div class="newsletter-footer">
+                <p>By subscribing, you agree to receive emails with property updates and offers. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and About Section -->
+      <div class="footer-about">
+        <h4>Lavish Land</h4>
+        <p>Your trusted partner in finding the perfect home. We offer a wide range of properties to suit your needs and lifestyle.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/properties">Properties</a></li>
+          <li><a href="/agents">Agents</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> <a href="mailto:info@realestate.com">info@realestate.com</a></p>
+        <p><strong>Address:</strong> 123 Main Street, City, State</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Real Estate Co. All rights reserved.</p>
+    </div>
+  </footer>
+    
+
+
+</body>
+</html>

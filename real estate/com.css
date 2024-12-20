@@ -1,0 +1,383 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#menu-bar
+{
+    width:100%;
+    text-align: left;
+    background:#0f1621 ;
+    border:1px black solid;
+    display: flex;
+}
+
+#m1
+{
+ width:20%;
+ border:0px black solid;
+ padding:20px;
+ margin-right: 280px;
+ margin-left: 20px;
+}
+
+.logo
+{
+    width: 80%;
+    height: 50px;
+}
+
+#menu-bar-link ol li
+{
+    display: inline;
+    list-style: none;
+    cursor:pointer;
+    margin-left: 40px;
+    
+    font-size: 18px;
+    font-family:arial;
+    margin-right: 35px;
+    transition:0.50s;
+}
+
+#menu-bar-link ol li:hover
+{
+   font-size: 19px;
+}
+
+#menu-bar-link ol
+{
+    
+    margin-top: 30px;
+    
+}
+
+#menu-bar-link ol li a{color:white;text-decoration: none;}
+
+.fa-solid
+{
+    font-size: 30px;
+    
+}
+
+#header-ban
+{
+    width:100%;
+    height:500px;
+    text-align: center;
+    background-image: url(images/com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px black solid;
+}
+
+.pic
+{
+    width:100%;
+    height:600px;
+    z-index: -1;
+}
+
+#header-txt
+{
+    width:60%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+    border:10px rgb(255, 255, 255) ridge;
+    text-shadow: 5px 5px 10px black;
+}
+
+.commercial
+{
+    width:100%;
+    height:550px;
+    display: flex;
+    border: 0px black solid;
+}
+
+.com-text
+{
+    width:60%;
+    height:500px;
+    margin: 20px;
+    padding: 60px;
+    border: 0px black solid;
+}
+
+.com-text h1 
+{
+    font-family: arial;
+    color: #0f1621;
+    font-size: 40px;
+}
+
+.com-text p
+{
+    font-size: 20px;
+    line-height: 1.6;
+    
+}
+
+.com-pic
+{
+    width:35%;
+    height:500px;
+    
+    margin: 20px;
+    border: 0px black solid;
+}
+
+.com-pic img
+{
+    width:100%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 450px;
+}
+
+/* Section Wrapper */
+.commercial-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: arial;
+    margin-bottom: 2rem;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #090d15;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card Overlay */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: left;
+}
+
+.card-overlay .property-count {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.card-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-overlay h4
+{
+    font-size: 18px;
+    font-family: arial;
+}
+
+.card-overlay h4 a{text-decoration: none;color: white;}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+/* Text Section */
+.text-section {
+    margin-top: 1rem;
+    text-align: left;
+    max-width: 600px;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.newsletter-section {
+    background-color: #ffffff;
+    padding: 20px 0;
+    font-family: arial;
+    text-align: center;
+}
+
+.newsletter-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.newsletter-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.newsletter-header p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#newsletter-email {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#subscribe-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #0f1621;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscribe-btn:hover {
+    background-color: #06284d;
+}
+
+.newsletter-footer p {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0f1621;
+    color: #fff;
+    font-family: arial;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-about h4,
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-about p,
+  .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-contact p a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-contact p a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-social .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #ccc;
+  }
